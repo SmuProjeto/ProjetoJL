@@ -1,0 +1,4 @@
+--Descrição Projeto--
+A ideia principal é criar uma transmissão de rádio via web, utilizando webRTC. 
+1 - Página do locutor para iniciar a transmissão do áudio.
+2 - Página do ouviente para escutar a transmissão.
