@@ -1,0 +1,238 @@
+<html>
+<head>
+<title>Rodrigo &amp; Ricardo</title>
+<STYLE type=text/css>
+.display { COLOR: #000000; FONT-FAMILY: Geneva, Arial, Helvetica, san-serif; FONT-SIZE: 11px; TEXT-ALIGN: left; font-weight: bold }
+</STYLE>
+<script language=JavaScript>
+<!--
+
+//Disable right click script III- By Renigade (renigade@mediaone.net)
+//For full source code, visit http://www.dynamicdrive.com
+
+var message="";
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+
+document.oncontextmenu=new Function("return false")
+// --> 
+</script>
+<SCRIPT language=JavaScript>
+<!--
+var a = -1
+var maxmusic = 1;
+
+wma = new Array();
+autor = new Array();
+titulos = new Array();
+
+
+	wma[0]= "musica01.wma";
+	autor[0] = "Rodrigo e Ricardo";
+	titulos[0]= " Volta para o meu coração";
+	
+    
+ns4 = (document.layers)? true:false
+ie4 = (document.all)? true:false
+parada=0
+
+function inicio() {
+	document.all.mautor.innerText=autor[0];
+	document.all.mnome.innerText=titulos[0];
+}
+
+var bWin32IE;
+if ((navigator.userAgent.indexOf("IE") != "-1") && (navigator.userAgent.length > 1)) {
+	bWin32IE = true;
+} else {
+	bWin32IE = false;
+}
+
+function fechar()
+{
+	window.close()
+}
+
+function troca() {
+	if (MediaPlayer.PlayState==0) {
+		if (parada==0){
+			onFF();
+			onPlay();
+		}
+	}
+	setTimeout('troca();',1000); 
+}
+
+function layerWrite(id,nestref,text) {	
+	if (ns4) {
+		if (nestref)
+			var lyr = eval('document.'+nestref+'.document.'+id+'.document');
+		else 
+			var lyr = document.layers[id].document;
+		lyr.open();
+		lyr.write(text);
+		lyr.close();
+	} else if (ie4) { 
+		document.all[id].innerHTML = text;
+	}
+}
+
+function mostra() {
+	if (ns4){
+		document.layers["mnome"].document.open()
+		document.layers["mnome"].document.write(titulos[a])
+		document.layers["mnome"].document.close()
+
+		document.layers["mautor"].document.open()
+		document.layers["mautor"].document.write(autor[a])
+		document.layers["mautor"].document.close()
+	}
+	
+	if (ie4){
+		document.all.mnome.innerText=titulos[a];
+		document.all.mautor.innerText=autor[a];
+	}
+}
+
+
+function mudwma(k) {
+	MediaPlayer.Filename=wma[k];
+	mostra();
+}
+
+function onFF() {
+	a = a + 1;
+	b = maxmusic;
+	if (a == b){
+		a = 0;
+	}
+	mudwma(a);
+}
+
+function onPause() {
+	//if( MediaPlayer.PlayState == 1 )
+	//	MediaPlayer.Play();
+	//else if (MediaPlayer.PlayState == 2)
+	//	MediaPlayer.Pause();
+	MediaPlayer.Pause();
+}
+
+function onPlay() {
+	if(MediaPlayer.PlayState == 0){
+		MediaPlayer.Play();
+		parada=0;
+	}
+	mostra();
+}
+
+function onStop() {
+	MediaPlayer.Stop();
+    parada=1;
+}
+
+function onVolumeUp() {
+	if (MediaPlayer.Volume <= -1000) {
+		MediaPlayer.Volume = MediaPlayer.Volume + 1000;
+	}
+}
+
+function onVolumeDown() {
+	if (MediaPlayer.Volume >= -9000) {
+		MediaPlayer.Volume = MediaPlayer.Volume - 1000;
+	}
+}
+
+/*
+function MM_changeProp(objName,x,theProp,theValue) { //v3.0
+	var obj = MM_findObj(objName);
+	if (obj && (theProp.indexOf("style.")==-1 || obj.style)) eval("obj."+theProp+"='"+theValue+"'");
+}
+*/
+//-->
+</SCRIPT>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<!-- Fireworks 4.0  Dreamweaver 4.0 target.  Created Tue Jun 04 09:27:07 GMT-0300 (Hora padrão leste da Am. Sul) 2002-->
+<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+</script>
+</head>
+<body bgcolor="#FFFFFF" leftmargin="0" topmargin="0" onload="troca();inicio(); onFF();">
+<div id="Layer1" style="position:absolute; left:1px; top:0px; width:106px; height:93px; z-index:0"><img src="fundo.jpg" width="282" height="360" border="0" usemap="#Map2"> 
+  <map name="Map2">
+    <area shape="circle" coords="19,311,16" href="JavaScript:onPlay();" alt="Executar">
+    <area shape="circle" coords="50,311,9" href="JavaScript:onStop();" alt="Parar">
+    <area shape="circle" coords="75,311,9" href="JavaScript:onFF();" alt="Pr&oacute;xima">
+  </map>
+</div>
+<div id="Layer2" style="position:absolute; left:73px; top:267px; width:220px; height:32px; z-index:4"> 
+  <object id="MediaPlayer" width="210" height="24" classid="clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95"   codebase="http://activex.microsoft.com/activex/%20%20%20controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701" standby="Loading Microsoft® Windows® Media Player components..." type="application/x-oleobject" viewastext>
+    <param name="AutoStart" value="1">
+    <param name="TransparentAtStart" value="1">
+    <param name="ShowControls" value="0">
+    <param name="ShowDisplay" value="0">
+    <param name="ShowStatusBar" value="1">
+    <param name="AutoSize" value="False">
+    <param name="AnimationAtStart" value="False">
+    <param name="Filename" value="">
+    <embed type="application/x-mplayer2" pluginspage="http://www.microsoft.com/windows/mediaplayer/download/default.asp" border="0" src="" autostart="True" transparentatstart="True" showcontrols="0" showdisplay="0" showstatusbar="1" animationatstart="False" id="MediaPlayer" designtimesp="9716" autosize="False" filename="" width="179" height="24"> 
+    </embed> </object>
+</div>
+<table width="0" border="0" cellpadding="0" cellspacing="0">
+  <!-- fwtable fwsrc="player.png" fwbase="index.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="1" -->
+  <tr> 
+    <td height="273" valign="bottom">&nbsp; </td>
+  </tr>
+  <tr> 
+    <td height="87" valign="top" align="center">
+      <table width="98%" border="0" cellspacing="0" cellpadding="0">
+        <tr> 
+          <td height="31" align="center" valign="middle">&nbsp;</td>
+        </tr>
+        <tr> 
+          <td height="30" valign="middle"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="21%">&nbsp;</td>
+                <td width="79%"> 
+                  <div class=display id=mnome style="HEIGHT: 14px; LEFT: 95px; POSITION: absolute; TOP: 303px; WIDTH: 218px; Z-INDEX: 1"></div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr> 
+          <td height="27" valign="middle"> 
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+              <tr> 
+                <td width="22%">&nbsp;</td>
+                <td width="78%"> 
+                  <div class=display id=mautor style="HEIGHT: 14px; LEFT: 26px; POSITION: absolute; TOP: 337px; WIDTH: 234px; Z-INDEX: 1; visibility: hidden"></div>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+</table>
+<map name="botoesMap"> 
+  <area shape="rect" coords="150,10,168,24" href="JavaScript:onPlay();"">
+  <area shape="rect" coords="173,9,190,23" href="JavaScript:onStop();"">
+  <area shape="rect" coords="194,9,211,23" href="JavaScript:onFF();"">
+</map>
+</body>
+</html>

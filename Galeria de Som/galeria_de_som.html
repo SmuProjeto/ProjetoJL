@@ -1,0 +1,221 @@
+<html>
+<!--
+Script desenvolvido por Stephan Spacov, uso e desenvolvimento livre
+sfsites.blogspot.com
+-->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<title>Galeria de Som Simples</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #000000;
+}
+.style3 {
+	color: #FFFFFF;
+	font-family: "Curlz MT";
+	font-size: 18px;
+}
+.style4 {
+	font-size: 12px;
+	font-weight: bold;
+}
+.style5 {font-size: 12px}
+.style6 {font-size: 24px}
+.style7 {color: #FFFFFF; font-family: "Curlz MT"; font-size: 24px; }
+.style9 {font-size: 16px}
+-->
+</style>
+</head>
+<script>
+function ab(){
+puddle.style.visibility="visible";
+puddle1.style.visibility="visible";
+bio2.style.visibility="visible";
+barra.style.visibility="visible";
+bio.style.visibility="hidden";
+alice.style.visibility="hidden";
+alice1.style.visibility="hidden";
+}
+function cd(){
+puddle.style.visibility="hidden";
+puddle1.style.visibility="hidden";
+bio2.style.visibility="hidden";
+barra1.style.visibility="visible";
+bio.style.visibility="visible";
+alice1.style.visibility="visible";
+alice.style.visibility="visible";
+}
+function ef(){
+puddle.style.visibility="hidden";
+puddle1.style.visibility="hidden";
+barra.style.visibility="hidden";
+bio2.style.visibility="hidden";
+}
+function gh(){
+alice.style.visibility="hidden";
+alice1.style.visibility="hidden";
+barra1.style.visibility="hidden";
+bio.style.visibility="hidden";
+}
+</script>
+
+<body>
+<object  title="Alice in Chains - Nutshell" name="alice" style="visibility:hidden;position:absolute;top:70;left:257;" id='mediaPlayer' width="300" height="50" classid='CLSID:22d6f312-b0f6-11d0-94ab-0080c74c7e95' codebase='http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701' standby='Loading Microsoft Windows Media Player components...' type='application/x-oleobject'>
+<param name='fileName' value="E:\Músicas\alice in chains - nutshell.mp3">
+<param name='animationatStart' value='true'>
+<param name='transparentatStart' value='true'>
+<param name='autoStart' value="false">
+<param name='showControls' value="true">
+<param name="ShowStatusBar" value="true">
+<param name='loop' value="0">
+<embed type='application/x-mplayer2' pluginspage='http://microsoft.com/windows/mediaplayer/en/download/' src="" width="300" height="50" autostart="1" displaysize='4' autosize='0' bgcolor='black' showcontrols="1" showtracker='1' ShowStatusBar='1' showdisplay='0' videoborder3d='0' designtimesp='5311' loop="1"></embed>
+</object>
+<p align="center"><object title="Puddle of Mudd - Blury" name="puddle" style="visibility:hidden;position:absolute;top:70;left:257;" id='mediaPlayer' width="300" height="50" classid='CLSID:22d6f312-b0f6-11d0-94ab-0080c74c7e95' codebase='http://activex.microsoft.com/activex/controls/mplayer/en/nsmp2inf.cab#Version=5,1,52,701' standby='Loading Microsoft Windows Media Player components...' type='application/x-oleobject'>
+<param name='fileName' value="E:\Músicas\puddle of mudd - blurry.mp3">
+<param name='animationatStart' value='true'>
+<param name='transparentatStart' value='true'>
+<param name='autoStart' value="false">
+<param name='showControls' value="true">
+<param name="ShowStatusBar" value="true">
+<param name='loop' value="1">
+<embed src="" width="300" height="50" autostart="1" loop="1" type='application/x-mplayer2' pluginspage='http://microsoft.com/windows/mediaplayer/en/download/' displaysize='4' autosize='0' bgcolor='black' showcontrols="1" showtracker='1' ShowStatusBar='1' showdisplay='0' videoborder3d='0' designtimesp='5311' name="puddle"></embed>
+</object></p>
+<br>
+<span class="style5"><font face="Arial, Helvetica, sans-serif" color="#FFFFFF">Escolha a m&uacute;sica:</font></span><br>
+<br>
+<table width="justify" border="1" bordercolor="#89A4FF" cellspacing="0" cellpadding="3">
+  <tr>
+    <td><p style="cursor:pointer" align="left" class="style4" onMouseOver="cd()"><font color="#FFFFFF" face="Arial, Helvetica, sans-serif">&nbsp;Alice in Chains - Nutshell&nbsp;</font></p>    </td>
+  </tr>
+  <tr>
+    <td><p style="cursor:pointer" align="left" class="style4" onMouseOver="ab()">
+      <font face="Arial, Helvetica, sans-serif" color="#FFFFFF">&nbsp;Puddle of Mud - Blurry&nbsp;</font></p></td>
+  </tr>
+</table>
+<table style="visibility:hidden; position:absolute; top:35px; left:257px; width: 300px;" width="60%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td id="barra" background="fundo.jpg"><div align="right"><font size="-1" face="Arial, Helvetica, sans-serif" color="#FF0000"><strong onClick="ef()" style="cursor:pointer">X&nbsp;</strong></font></div></td>
+  </tr>
+  <tr>
+    <td id="puddle1"><div align="center"><font face="Arial, Helvetica, sans-serif" color="#00FF00">Puddle of Mudd - Blurry</font></div></td>
+  </tr>
+</table>
+<table style="visibility:hidden; position:absolute; top:35px; left:257px; width: 300px;" width="60%" border="0" cellspacing="0" cellpadding="0">
+    <td id="barra1" background="fundo.jpg"><div align="right"><font size="-1" face="Arial, Helvetica, sans-serif" color="#FF0000"><strong onClick="gh()" style="cursor:pointer">X&nbsp;</strong></font></div></td>
+  </tr>
+  <tr>
+    <td id="alice1"><div align="center"><font face="Arial, Helvetica, sans-serif" color="#00FF00">Alice in Chains - Nutshell</font></div></td>
+  </tr>
+</table>
+<table id="bio" width="400" style="visibility:hidden; position:absolute;top:150;left:200;" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><div align="center" class="style3 style6">
+      <div align="right">
+        <p align="center" class="style9"><font face="Arial, Helvetica, sans-serif">Letra:</font></p>
+        <font face="Arial, Helvetica, sans-serif" size="-1"><img hspace="3" vspace="3" align="left" src="alice_in_chains.jpg" width="150" height="148">"We chase misprinted lies<br>
+We face the path of time<br>
+And yet I fight<br>
+And yet I fight<br>
+This battle all alone<br>
+No one to cry to<br>
+No place to call home<br>
+<br><br>
+Oooh...Oooh...<br>
+Oooh...Oooh...<br>
+<br><br>
+My gift of self is raped<br>
+My privacy is raked<br>
+And yet I find<br>
+And yet I find<br>
+Repeating in my head<br>
+If I can't be my own<br>
+I'd feel better dead<br>
+<br><br>
+Oooh...Oooh...
+Oooh...Oooh...</font></p> </p>
+      </div>
+    </div></td>
+  </tr>
+</table>
+<table id="bio2" width="400" style="visibility:hidden; position:absolute;top:150;left:200;" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><div align="center" class="style3 style6">
+      <div align="right">
+        <p align="center" class="style9"><font face="Arial, Helvetica, sans-serif">Letra:</font></p>
+        <font face="Arial, Helvetica, sans-serif" size="-1"><img hspace="3" vspace="3" align="left" src="pudd.jpg" width="207" height="148">Everything's so blurry<br>
+And everyone's so fake<br>
+And everybody's so empty<br>
+And everything is so messed up<br>
+Pre-occupied without you<br>
+I cannot live at all<br>
+My whole world surrounds you<br>
+I stumble then I crawl<br>
+<br><br>
+You could be my someone<br>
+You could be my scene<br>
+You know that I'll protect you<br>
+From all of the obscene<br>
+I wonder what your doing<br>
+Imagine where you are<br>
+There's oceans in between us<br>
+But that's not very far<br>
+<br><br>
+Can you take it all away<br>
+Can you take it all away<br>
+When ya shoved it in my face<br>
+This pain you gave to me<br>
+<br><br>
+Can you take it all away<br>
+Can you take it all away<br>
+When ya shoved it my face<br>
+<br><br>
+Everyone is changing<br>
+There's noone left that's real<br>
+To make up your own ending<br>
+And let me know just how you feel<br>
+Cause I am lost without you<br>
+I cannot live at all<br>
+My whole world surrounds you<br>
+I stumble then I crawl<br>
+<br><br>
+You could be my someone<br>
+You could be my scene<br>
+You know that I will save you<br>
+From all of the unclean<br>
+I wonder what your doing<br>
+I wonder where you are<br>
+There's oceans in between us<br>
+But that's not very far<br>
+<br>
+[chorus]<br><br>
+
+Nobody told me what you thought<br>
+Nobody told me what to say<br>
+Everyone showed you where to turn<br>
+Told you where to runaway<br>
+Nobody told you where to hide<br>
+Nobody told you what to say<br>
+Everyone showed you where to turn<br>
+Showed you where to runaway
+<br><br>
+[chorus]<br><br>
+
+This pain you gave to me<br><br>
+
+You take it all<br>
+You take it all away...<br>
+This pain you gave to me<br>
+You take it all away<br>
+This pain you gave to me<br>
+Take it all away<br>
+This pain you gave to me <br>
+</font></p> </p>
+      </div>
+    </div></td>
+  </tr>
+</table></body>
+
+</html>
