@@ -30,3 +30,7 @@ Using (IMPORTANT PROGRAM) on Windows, access the following links on the sectioN 
 * [Doubango](https://www.doubango.org/sipml5/)- Doubango WebRTC with video call
 * [Sip JS](https://sipjs.com/) - Sip Framework
 * [WebRTC whit PABX](https://www.twilio.com/blog/2015/03/add-webrtc-to-your-pbx-or-call-center-in-5-minutes.html) - Add WebRTC To Your PBX or Call Center In 5 minutes
+* [WebRTC Radio - Parasprite](https://github.com/daniel-j/parasprite-radio) - Github repository 'Parasprite radio'
+* [Videoconferencia](https://github.com/manublanco/Centro-de-Videoconferencias) - Desarrollo de un centro de videoconferencias utilizando WebRtc.
+* [Client/Server application](https://github.com/lucaslouca/video-conference-webrtc) - Complete client/server application demonstrating how to setup a video conference with multiple peers using WebRTC.
+* [Javascript XMPP Client](https://www.jsxc.org/) - Extensible Messaging and Presence Protocol (XMPP) is an open XML technology for real-time communication.
