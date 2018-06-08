@@ -19,6 +19,7 @@ Using (IMPORTANT PROGRAM) on Windows, access the following links on the sectioN 
 * [Galeria de Som](https://www.scriptbrasil.com.br/download/codigo/7297/)- Folder on this github repository.
 * [Música](https://www.scriptbrasil.com.br/download/codigo/6048/) - Folder on this github repository.
 * [WebRTC](https://www.scriptbrasil.com.br/download/codigo/5132/) - Folder on this github repository.
+* [Video Conference WebRTC](https://github.com/lucaslouca/video-conference-webrtc)
 
 ## Important links
 * [WebRTC Live Audio Streaming/Broadcast](https://stackoverflow.com/questions/14507542/webrtc-live-audio-streaming-broadcast) - Stack overflow
