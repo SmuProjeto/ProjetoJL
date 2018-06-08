@@ -13,13 +13,14 @@ Using (IMPORTANT PROGRAM) on Windows, access the following links on the sectioN 
 * [WebRTC](https://webrtc.org/native-code/development/) - WebRTC is a free, open project that provides browsers and mobile applications with Real-Time Communications (RTC) capabilities via simple APIs.
 * [NodeJS](https://nodejs.org/en/download/) - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 * [Visual Studio](https://www.visualstudio.com/downloads/) - Fully-featured IDE for Android, iOS, Windows, web, & cloud. Learn more about Visual Studio's Integrated Development Environment.
+* [Firefox](https://www.mozilla.org/pt-BR/firefox/new/) - Web navigator
 
 ## Built With - CODE
 * [Monte sua rádio online](https://www.scriptbrasil.com.br/download/codigo/7294/?download=1) - Folder on this github repository.
 * [Galeria de Som](https://www.scriptbrasil.com.br/download/codigo/7297/)- Folder on this github repository.
 * [Música](https://www.scriptbrasil.com.br/download/codigo/6048/) - Folder on this github repository.
 * [WebRTC](https://www.scriptbrasil.com.br/download/codigo/5132/) - Folder on this github repository.
-* [Video Conference WebRTC](https://github.com/lucaslouca/video-conference-webrtc)
+* [Video Conference WebRTC](https://github.com/lucaslouca/video-conference-webrtc) - Complete client/server application demonstrating how to setup a video conference with multiple peers using WebRTC.
 
 ## Important links
 * [WebRTC Live Audio Streaming/Broadcast](https://stackoverflow.com/questions/14507542/webrtc-live-audio-streaming-broadcast) - Stack overflow
