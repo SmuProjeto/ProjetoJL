@@ -6,9 +6,9 @@
  
 'use strict';
  
-var nodestatic = require('node-static');
-var express = require('express');
-var path = require('path');
+var nodestatic = require('node-static'); //that's using module 'node-static'
+var express = require('express'); //that's using module 'express' (framework for Node.js)
+var path = require('path'); //that's using module 'path' - generalist
 
 var serverPort = process.env.OPENSHIFT_NODEJS_PORT || 1337
 var serverIpAddress = process.env.OPENSHIFT_NODEJS_IP || 'localhost'
@@ -32,8 +32,8 @@ app.set('view engine', 'ejs');
 
 // Tell Server that we are actually rendering HTML files through EJS.
 app.engine('html', require('ejs').renderFile);
-var server=app.listen(serverPort, serverIpAddress, function(){
-    console.log("Express is running on port "+serverPort);
+var server=app.listen(serverPort, serverIpAddress, function(){ //that's listining that port (1337) and IP address (localhost)
+    console.log("Express is running on port "+serverPort); //like printf
 });
 
 var io = require('socket.io').listen(server);
