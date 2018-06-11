@@ -5,6 +5,8 @@
  * @param app An express object that handles our requests/responses
  * @param socketIoServer The host address of this server to be injected in the views for the socketio communication
  */
+
+//Link article (Primeiros passos com Express em Node.js) at Drive explain this code
  
 'use strict';
  
