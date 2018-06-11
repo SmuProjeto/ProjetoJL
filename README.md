@@ -22,6 +22,9 @@ Using (IMPORTANT PROGRAM) on Windows, access the following links on the sectioN 
 * [WebRTC](https://www.scriptbrasil.com.br/download/codigo/5132/) - Folder on this github repository.
 * [Video Conference WebRTC](https://github.com/lucaslouca/video-conference-webrtc) - Complete client/server application demonstrating how to setup a video conference with multiple peers using WebRTC.
 
+## Understand - CODE
+* [Como funciona a função require do Node.js](http://nodebr.com/como-funciona-a-funcao-require-do-node-js/) 
+
 ## Important links
 * [WebRTC Live Audio Streaming/Broadcast](https://stackoverflow.com/questions/14507542/webrtc-live-audio-streaming-broadcast) - Stack overflow
 * [The State of WebRTC and Streaming Media 2018](http://www.streamingmedia.com/Articles/ReadArticle.aspx?ArticleID=124068&PageNum=2)- WebRTC information
