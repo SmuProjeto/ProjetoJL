@@ -32,23 +32,23 @@ CMD2 >> mongo
 Database to use in the login of the application.
 
 1. Create Database:
-´´´
+```
 use WebRadio
-´´´
+```
 
 2. Insert a collection 'People':
-´´´
+```
 db.createCollection("People")
-´´´
+```
 
 3. Insert a document:
 The document have just the function of determinate what is the type of user.
 
-´´´
+```
 db.People.insert({
   name: 'Jessica',
   Type: 'admin',
   Login: 'jessica',
   Password: '123',
 });
-´´´
+```
