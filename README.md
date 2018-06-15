@@ -14,8 +14,7 @@ Using (IMPORTANT PROGRAM) on Windows, access the following links on the sectioN 
 * [NodeJS](https://nodejs.org/en/download/) - Node.js® is a JavaScript runtime built on Chrome's V8 JavaScript engine.
 * [Visual Studio](https://www.visualstudio.com/downloads/) - Fully-featured IDE for Android, iOS, Windows, web, & cloud. Learn more about Visual Studio's Integrated Development Environment.
 * [Firefox](https://www.mozilla.org/pt-BR/firefox/new/) - Web navigator
-* [oAuth](https://pt.stackoverflow.com/questions/123777/oauth-o-que-%C3%A9-qual-sua-finalidade) - O OAuth é um protocolo de autorização para API's web voltado a permitir que aplicações client acessem um recurso protegido em nome de um usuário. 
- 
+
 ## Built With - Examples
 * [Monte sua rádio online](https://www.scriptbrasil.com.br/download/codigo/7294/?download=1) - Folder on this github repository.
 * [Galeria de Som](https://www.scriptbrasil.com.br/download/codigo/7297/)- Folder on this github repository.
@@ -25,6 +24,11 @@ Using (IMPORTANT PROGRAM) on Windows, access the following links on the sectioN 
 ## Built With - CODE
 * [Video Conference WebRTC](https://github.com/lucaslouca/video-conference-webrtc) - Complete client/server application demonstrating how to setup a video conference with multiple peers using WebRTC.
 * [NODE BR](http://nodebr.com/) - That is an article repository to understand about NODE.js.
+* [Criando uma aplicação de Chat simples com NodeJS e Socket.io ](https://tableless.com.br/criando-uma-aplicacao-de-chat-simples-com-nodejs-e-socket-io/)
+* [Getting Started with WebRTC](https://www.html5rocks.com/en/tutorials/webrtc/basics/)
+* [Disciplina de Programação Web I [1]](http://hdam.pro.br/ti-prw1.html#mostra)
+* [Disciplina de Programação Web I [2]](http://hdam.pro.br/ti-prw2.html#mostra)
+* [oAuth](https://pt.stackoverflow.com/questions/123777/oauth-o-que-%C3%A9-qual-sua-finalidade) - O OAuth é um protocolo de autorização para API's web voltado a permitir que aplicações client acessem um recurso protegido em nome de um usuário.
 * [OpenID Facebook](https://developers.facebook.com/docs/facebook-login/web/) - How to implement login with facebook account.
 * [OpenID Create App - Facebook](https://auth0.com/docs/connections/social/facebook) - Create and configurate app to facebook login.
 

@@ -1,0 +1,39 @@
+section{
+	max-width: 800px;
+    margin:0 auto;
+	text-align: center;
+    padding:2em;
+    border-radius: 1em;
+    margin-bottom:3em;
+    font-family:"Myriad Pro",PTSansCaptionRegular, arial, helvetica, sans-serif;
+}
+
+#success {
+    text-align: center;
+}
+
+
+#room-link {
+	min-height:2em;
+	display: inline-block;
+	border-radius: 1em;
+	line-height: 2em;
+	padding-left:1em;
+	padding-right: 1em;
+}
+
+#room-link a {
+	text-decoration: none;
+	color:#3fba00;	
+	outline:none;
+    font-size: 1.5em;
+}
+
+#room-link a:hover {
+	text-decoration: none;
+	text-decoration: underline;
+}
+
+	
+	
+	
