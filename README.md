@@ -24,6 +24,10 @@ Using (IMPORTANT PROGRAM) on Windows, access the following links on the sectioN 
 ## Built With - CODE
 * [Video Conference WebRTC](https://github.com/lucaslouca/video-conference-webrtc) - Complete client/server application demonstrating how to setup a video conference with multiple peers using WebRTC.
 * [NODE BR](http://nodebr.com/) - That is an article repository to understand about NODE.js.
+* [Criando uma aplicação de Chat simples com NodeJS e Socket.io ](https://tableless.com.br/criando-uma-aplicacao-de-chat-simples-com-nodejs-e-socket-io/)
+* [Getting Started with WebRTC](https://www.html5rocks.com/en/tutorials/webrtc/basics/)
+* [Disciplina de Programação Web I [1]](http://hdam.pro.br/ti-prw1.html#mostra)
+* [Disciplina de Programação Web I [2]](http://hdam.pro.br/ti-prw2.html#mostra)
 
 ## Important links
 * [WebRTC Live Audio Streaming/Broadcast](https://stackoverflow.com/questions/14507542/webrtc-live-audio-streaming-broadcast) - Stack overflow
