@@ -1,0 +1,12 @@
+{
+  "name": "ProjetoFinal",
+  "version": "0.0.0",
+  "description": "radio online",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "jessica & layssa & leticia",
+  "license": "BSD-2-Clause"
+ 
+}
