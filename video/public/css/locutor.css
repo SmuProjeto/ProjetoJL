@@ -1,0 +1,35 @@
+section{
+	max-width: 800px;
+    margin:0 auto;
+	text-align: center;
+    padding:2em;
+    border-radius: 1em;
+    margin-bottom:3em;
+    font-family:"Myriad Pro",PTSansCaptionRegular, arial, helvetica, sans-serif;
+}
+
+#success {
+    text-align: center;
+}
+
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #000033;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+button:hover {background-color: #808080	}
+
+button:active {
+  background-color: #3366CC	;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
