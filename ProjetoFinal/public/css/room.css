@@ -50,7 +50,9 @@ video {
 }
 
 .videoBox {
+    border-radius: 5px;
 	width:100%;
+    border:10px #E8E8E8 solid;
     vertical-align:middle;
     -webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -62,6 +64,7 @@ video {
     display: inline-block;
     margin:0.5em;
     padding:1px;
+    background-color: #29bbff;
     border-radius: 5px;
 }
 
@@ -73,6 +76,7 @@ video {
     height:auto;
     margin:0;
     padding:1px;
+    background-color: rgba(255,255,255,0.5);
     border-radius: 0;
 }
 	

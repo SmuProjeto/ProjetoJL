@@ -1,4 +1,4 @@
-<!-- proteger pagina com sessao-->
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -6,9 +6,12 @@
 		<meta name='description' content='Radio Online' />
 		<meta name='viewport' content='width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1'>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script>var LOCUTOR='<%= locutor %>';</script>  
 		<script src='/socket.io/socket.io.js'></script>	
 		<script src='/js/locutor.js'></script>
 		<script src="/node_modules/socket.io/node_modules/socket.io-client/lib/io.js"></script>
+		<script src='/js/meeting.js'></script>
+		<script src='/js/lib/adapter.js'></script>
 		<link rel="stylesheet" type="text/css" href="css/locutor.css" media="screen" />
 		<title>Radio Online</title>
 	</head>
@@ -16,9 +19,19 @@
         <main id="container">
 			<section id="success">
 						<br>
-						<button name="iniciar">Inicializar Transmissão</button>
+						<button id="iniciar">Inicializar Transmissão</button>
 						<br><br><br>
-						<button name="finalizar">Finalizar Transmissão</button>
+						<div class="container">
+						<div id="videos">
+			                <div id="videosWrapper">
+							    <div id="localVideoWrap" class='videoWrap'>
+								    <audio class="videoBox" id="localVideo" autoplay></audio>
+								    <img id="icone_locutor" src="images/locutor.jpg" width="200" height="200" style="visibility: hidden">
+								</div>
+			                </div>
+						</div>
+
+		</div>
 				
 				
 	    	</section>
