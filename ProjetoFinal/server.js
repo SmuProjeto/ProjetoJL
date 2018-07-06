@@ -11,8 +11,8 @@ var express = require('express');
 var path = require('path');
 
 var serverPort = process.env.OPENSHIFT_NODEJS_PORT || 8080
-var serverIpAddress = process.env.OPENSHIFT_NODEJS_IP || '0.0.0.0'
-var socketIoServer = '0.0.0.0';
+var serverIpAddress = process.env.OPENSHIFT_NODEJS_IP || '127.0.0.1'
+var socketIoServer = 'radiodaboiada.tk';
 
 ////////////////////////////////////////////////
 // SETUP SERVER
