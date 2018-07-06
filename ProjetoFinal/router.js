@@ -16,7 +16,12 @@ module.exports=function(app, socketIoServer) {
 
     app.get('/locutor',function(req,res){
     	console.log("chamando locutor...");
-        res.render('locutor',{"locutor":socketIoServer});
+        res.render('locutor');
+    });
+
+     app.get('/transmissao',function(req,res){
+        console.log("transmissao...");
+        res.render('transmissao',{"locutor":socketIoServer});
     });
 
     app.get('/home/:ouvirRadioJL',function(req,res){

@@ -6,13 +6,16 @@ $( document ).ready(function() {
     
 
    $(document).on('click', "#icone_radio", function () { 
-		enterRoom();
+
+		ouvir();
 		
+	
    });
 
 }); 
 
-function enterRoom() {
+
+function ouvir() {
     var room = "ouvirRadioJL";
 	roomUrl =  'http://'+window.location.host+'/home/'+room;
 	window.location.href = roomUrl;

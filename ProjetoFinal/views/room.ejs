@@ -7,11 +7,11 @@
 		<script>var HOST_ADDRESS='<%= hostAddress %>';</script>  
 		<script src='/socket.io/socket.io.js'></script>
 		<script src='/js/lib/adapter.js'></script>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>	
 		<script src='/js/meeting.js'></script>
 		<script src='/js/room.js'></script>
 		<link rel="stylesheet" type="text/css" href="/css/room.css" media="screen" />
-		<title>Video Conference</title>
+		<title>Ouvinte</title>
 	</head>
 
 	<body>
@@ -20,9 +20,12 @@
                 <div id="videosWrapper">
 				    <div id="localVideoWrap" class='videoWrap'>
 					    <audio class="videoBox" id="localVideo" autoplay></audio>
+					    
 					</div>
+					<img id="icone_ouvir" src="/images/ouvir.png" width="200" height="200" >
                 </div>
 			</div>
+			
 		</div>
 	</body>
 

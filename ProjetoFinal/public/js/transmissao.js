@@ -1,24 +1,35 @@
 'use strict';
-
 var meeting;
-var host = HOST_ADDRESS; // HOST_ADDRESS gets injected into room.ejs from the server side when it is rendered
+var hostLocutor = LOCUTOR; 
 
 $( document ).ready(function() {
-	/////////////////////////////////
-	// CREATE MEETING
-	/////////////////////////////////
-	meeting = new Meeting(host,false);
-	
-	meeting.onLocalVideo(function(stream) {}); 
+    	meeting = new Meeting(hostLocutor,true);
+		var room = "ouvirRadioJL";
+		meeting.joinRoom(room);
+
+	meeting.onLocalVideo(function(stream) {
+	 
+	        document.querySelector('#localVideo').src = window.URL.createObjectURL(stream);
+	        
+	        $("#micMenu").on("click",function callback(e) {
+				toggleMic();
+    		});
+    		
+    		$("#videoMenu").on("click",function callback(e) {
+				toggleVideo();
+    		});
+
+			$("#localVideo").prop('muted', true);
+
+	    }
+	);
 	
 	meeting.onRemoteVideo(function(stream, participantID) {
-
-	       addRemoteVideo(stream, participantID);  
+	        addRemoteVideo(stream, participantID);  
 	    }
 	);
 	
 	meeting.onParticipantHangup(function(participantID) {
-			// Someone just left the meeting. Remove the participants video
 			removeRemoteVideo(participantID);
 		}
 	);
@@ -28,14 +39,16 @@ $( document ).ready(function() {
 	    }
 	);
 	
-    var room = window.location.pathname.match(/([^\/]*)\/*$/)[1];
-	meeting.joinRoom(room);
+   
+   
 
-}); // end of document.ready
+}); 
+
 
 function addRemoteVideo(stream, participantID) {
 	
     var $videoBox = $("<div class='videoWrap' id='"+participantID+"'></div>");
+    //var $video = $("<video class='videoBox' autoplay></video>");
     var $video = $("<audio class='videoBox' autoplay></audio>");
     $video.attr({"src": window.URL.createObjectURL(stream), "autoplay": "autoplay"});
     $videoBox.append($video);
